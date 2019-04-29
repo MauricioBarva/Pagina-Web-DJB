@@ -331,6 +331,16 @@ footer img {
     margin-bottom: 25px;
 }
 
+#img-vision {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(68, 68, 68, 0.6)), url('../img/vision.jpg') left no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
 .texto {
     padding-top: 20px;
     padding-bottom: 15px;
