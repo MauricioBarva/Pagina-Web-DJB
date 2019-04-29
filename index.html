@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Somos una empresa contratista con experiencia en procesos constructivos y ejecución de obras arquitectónicas y civiles, nuestra empresa es especialista en áreas de acabados en blanca, somos capaces de superar expectativas en cuanto nuestro trabajo ya que poseemos la capacidad técnica y practica suficiente para realizar este tipo de tareas, contando con personal que compone equipos de trabajo, basado en un objetivo primordial: SATISFACCIÓN COMPLETA DE NUESTROS CLIENTES A PRECIOS COMPETITIVOS.  Esto es la garantía de un trabajo excelente y mejor resultado de la mano de obra, precios, con las demás ofertas del mercado.
+    De igual forma, nuestra experiencia en obra de gran trascendencia en el área nos pone en ventaja frente a otros y nos permite conocer a fondo las necesidades y exigencias de las personas que al final serán sus clientes y gozaran directamente de nuestros servicios.">
+    <meta name="keywords" content="Acabados de obra blanca,Bucaramanga,Piedecuesta,Obra blanca,empresa contratista,procesos constructivos,obras arquitectonicas, area metropolitana de bucaramanga">
+    <meta name="author" content="Mauricio Barva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DJB | Acabados de Obra Blanca</title>
+    <link rel="icon" href="img/paint.png">
+    <!--Mis Estilos-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!--Estilos Slider-->
+    <link rel="stylesheet" href="css/jquery.slide.css">
+    <!--Mis scripts-->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <div class="contenedor" id="contenedor-menu">
+
+            <span class="logo">DJB</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="#">Nuestros Trabajos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">¿Por qué elerginos?</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="contenedor">
+            <div id="nombre-empresa">
+                <span id="djb">DJB</span>
+                <span id="empresa">Contratista<br>Acabados de obra blanca</span>
+                <div id="pintura">
+                    <img src="img/paint.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="slide titulo">
+
+                <ul>
+                    <li data-bg="https://picsum.photos/1200/450/?random"></li>
+                    <li data-bg="https://picsum.photos/1200/420/?random"></li>
+                    <li data-bg="https://picsum.photos/1200/410/?random"></li>
+                    <li data-bg="https://picsum.photos/1200/400/?random"></li>
+                    <li data-bg="https://picsum.photos/1200/350/?random"></li>
+                </ul>
+                <a href="#">Ver más trabajos</a>
+            </div>
+        </div>
+    </header>
+    <!--Footer-->
+    <div id="div-footer">
+        <div class="contenedor">
+            <footer class="contenedor">
+                <img src="img/imagen-footer.png" alt="Contacto">
+                <div id="redes-sociales">
+                    <div id="fb-footer" class="fb-blanco">
+                        <!--Aquí va el logo fb-->
+                    </div>
+                    <div class='inst-blanco'>
+                        <!--Aquí va el logo de instagram-->
+                    </div>
+
+                </div>
+                <span>Desarrollado por <strong>Mauricio Barva</strong> &copy; 2019</span>
+            </footer>
+        </div>
+    </div>
+
+    <!--Slider-->
+    <script src="js/jquery.slide.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.slide').slide({
+                'slideSpeed': 3000,
+                'isShowArrow': true,
+                'dotsEvent': 'mouseenter',
+                'isLoadAllImgs': true
+            });
+        });
+    </script>
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+            target="_blank">CC 3.0 BY</a></div>-->
+</body>
+
+</html>

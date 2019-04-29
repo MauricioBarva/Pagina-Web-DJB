@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'yanone';
+    src: url('./fonts/yanone.ttf');
+}
+
+@font-face {
+    font-family: 'finger';
+    src: url('fonts/finger.ttf');
+}
+
+@font-face {
+    font-family: 'titilium';
+    src: url('./fonts/titilium.ttf');
+}
+
+body {
+    background: url("../img/pattern.png");
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'titilium', 'arial', 'helvetica';
+}
+
+
+/*Clase contenedor*/
+
+#contenedor-menu {
+    /*Pone los elementos uno al lado del otro*/
+    display: flex;
+    /*Pues simplement me justifica el contenido dependiendo de como yo le coloque
+    en este caso le dice que deje un espacio enmedio*/
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header .logo {
+    color: black;
+    font-size: 50px;
+    font-family: 'finger';
+    letter-spacing: 4px;
+    transition: all 300ms;
+    margin-top: 5px;
+    margin-left: 41px;
+    cursor: pointer;
+}
+
+header .logo:hover {
+    color: #1583cc;
+    transform: scale(1.2, 1.2);
+}
+
+nav {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'titilium';
+    font-weight: 800;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 65px;
+}
+
+nav ul li {
+    list-style: none;
+    padding-top: 10px;
+    padding-right: 25.5px;
+    padding-left: 25.5px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    transition: all 300ms;
+    list-style: none;
+}
+
+nav li a:hover {
+    color: #1583cc;
+    text-decoration: none;
+}
+
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.contenedor-footer {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/*space*/
+
+.space {
+    min-height: 90px;
+}
+
+
+/*UnderScore Border bottom*/
+
+.underscore {
+    border-bottom: 1px solid gray;
+    width: 55%;
+    height: 6vh;
+}
+
+
+/*Footer*/
+
+#div-footer {
+    background-color: #2F2F2F;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    height: 180px;
+    padding-top: 28px;
+    margin-top: 10px;
+}
+
+#redes-sociales {
+    float: right;
+    margin-top: 30px;
+    border-left: .2px solid #fff;
+    height: 25vh;
+    width: 50%;
+}
+
+#div-footer span {
+    float: left;
+    margin-left: 430px;
+    margin-top: 10px;
+    width: 23%;
+    text-align: center;
+    color: white;
+    font-family: 'titilium', 'yayone', 'arial';
+    font-size: 14px;
+}
+
+.fb-blanco {
+    width: 10.5%;
+    height: 8.9vh;
+    margin-left: 45%;
+    margin-top: 10%;
+    float: left;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/facebook.png');
+}
+
+.fb-blanco:hover {
+    transition: all 380ms;
+    transform: rotate(360deg);
+    background-image: url('../img/facebook-blue.png');
+    background-repeat: no-repeat;
+}
+
+.inst-blanco {
+    width: 10.5%;
+    height: 8vh;
+    cursor: pointer;
+    float: left;
+    margin-top: 59px;
+    margin-left: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/instagram-blanco.png');
+}
+
+.inst-blanco:hover {
+    transition: all 600ms;
+    transform: rotate(360deg);
+    background-image: url('../img/instagram-color.png');
+    background-repeat: no-repeat;
+}
+
+
+/*Fixed*/
+
+#subir {
+    background-repeat: no-repeat;
+    background: transparent;
+    min-width: 4.5%;
+    min-height: 9%;
+    width: 5%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 87%;
+    cursor: pointer;
+}
+
+#subir img {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.clearfix {
+    float: none;
+    clear: none;
+}
+
+
+/*Bootstrap*/
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #c5c5c5;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin: 0 auto;
+    background: #2F2F2F;
+    font-family: 'titilium', 'yayone', 'arial';
+    font-weight: bold;
+    margin-top: 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 67%;
+}
+
+.tab-content>.active {
+    display: block;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    background-size: cover;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: black !important;
+    font-family: 'titilium', 'yayone', 'arial';
+    text-align: justify;
+    width: 77%;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.nav a {
+    color: white !important;
+    text-decoration: none;
+    margin-bottom: 1px!important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #1583cc !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    background: rgb(39, 39, 39) !important;
+    border: 2px solid transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    border-top-left-radius: 5px !important;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: transparent !important;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+    color: #1583cc !important;
+    transition: 300ms !important;
+}
+
+
+/*Pestaña quienes somos*/
+
+#quienes-somos {
+    width: 55%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#img-quienes-somos {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(68, 68, 68, 0.4)), url('../img/imagen-home.jpg') left no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#img-mision {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(68, 68, 68, 0.5)), url('../img/mision.jpg') left no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.texto {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background: url("../img/lines.png") repeat-x;
+}
+
+.texto span {
+    display: block;
+    background: url("../img/lines.png") repeat-x;
+    color: white;
+}
+
+.imagencontenedor {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+#figure-caption {
+    padding-top: 10px !important;
+}
+
+#mapa {
+    width: 100%;
+    height: 50vh;
+}
+
+.btn-primary {
+    margin-top: 10px;
+    margin-left: 9px;
+    color: #fff;
+    background-color: #1583cc !important;
+    border-color: #1583cc !important;
+    width: 97%;
+    text-transform: uppercase;
+    font-family: 'titilium', 'arial';
+}
+
+.btn-primary:hover {
+    background: rgba(21, 131, 204, .9) !important;
+}
